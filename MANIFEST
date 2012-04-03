@@ -1,0 +1,14 @@
+COPYING
+Changes
+FFI.pm
+FFI.xs
+INSTALL
+Library.pm
+Makefile.PL
+MANIFEST
+README
+t/basic.t
+t/Support.pm
+t/win32.t
+TODO
+META.yml                                 Module meta-data (added by MakeMaker)
