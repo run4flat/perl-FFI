@@ -1,12 +1,12 @@
+Build.PL
 COPYING
 Changes
-FFI.pm
-FFI.xs
 INSTALL
-Library.pm
-Makefile.PL
 MANIFEST
 README
+lib/FFI.pm
+lib/FFI.xs
+lib/FFI/Library.pm
 t/basic.t
 t/Support.pm
 t/win32.t
