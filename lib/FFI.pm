@@ -1,22 +1,19 @@
 package FFI;
 
 use strict;
-use Carp;
-use vars qw($VERSION @ISA);
+use warnings;
 
-require DynaLoader;
+use Alien::FFCall;
 
-@ISA = qw(DynaLoader);
-$VERSION = '1.04';
-
-bootstrap FFI $VERSION;
+require XSLoader;
+XSLoader::load();
 
 1;
 __END__
 
 =head1 NAME
 
-FFI - Perl Foreign Function Interface
+FFI - Perl Foreign Function Interface using libffcall
 
 =head1 SYNOPSIS
 
