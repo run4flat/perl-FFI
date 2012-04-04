@@ -13,7 +13,6 @@ print "Compiler flags are $compiler_flags\n";
 
 # Add the specific libraries against which to link
 my $linker_flags = $alien->libs();
-$linker_flags .= ' -lavcall -lcallback';
 print "Linker flags are $linker_flags\n";
 
 # Create the build script:
