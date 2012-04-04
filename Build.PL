@@ -8,16 +8,19 @@ my $alien = Alien::FFCall->new;
 
 # Add the WIN32 compiler flag, as appropriate
 my $compiler_flags = $alien->cflags();
+$compiler_flags .= ' -DWIN32' if $^O eq "MSWin32";
 print "Compiler flags are $compiler_flags\n";
-print "Linker flags are ", $alien->libs(), "\n";
-$compiler_flags = [$compiler_flags] unless ref $compiler_flags;
-push (@$compiler_flags, '-DWIN32') if $^O eq "MSWin32";
+
+# Add the specific libraries against which to link
+my $linker_flags = $alien->libs();
+$linker_flags .= ' -lavcall -lcallback';
+print "Linker flags are $linker_flags\n";
 
 # Create the build script:
 my $builder = Module::Build->new(
 	module_name => 'FFI',
 	extra_compiler_flags => $compiler_flags,
-	extra_linker_flags => $alien->libs(),
+	extra_linker_flags => $linker_flags,
 	configure_requires => {
 		'Alien::FFCall' => 0,
 	},
