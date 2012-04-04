@@ -8,7 +8,7 @@ use Alien::FFCall;
 our $VERSION = '1.04';
 
 require XSLoader;
-XSLoader::load('FFI', $VERSION);
+XSLoader::load('FFI');
 
 1;
 __END__
