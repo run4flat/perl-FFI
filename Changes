@@ -39,3 +39,6 @@ Revision history for Perl extension FFI.
 1.04  2008-09-06
     Maintenance release.
     - Avoid CPAN testers emails when libffi is not installed.
+
+CURRENT WORK
+    Working on switch to use Alien::FFCall and, therefore, Module::Build

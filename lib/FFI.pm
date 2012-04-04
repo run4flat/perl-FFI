@@ -164,6 +164,9 @@ Reini Urban C<< <RURBAN@cpan.org> >> contributed fixes.
 Anatoly Vorobey C<< <avorobey@pobox.com> >> and Gaal Yahas C<<
 <gaal@forum2.org> >> are the current maintainers.
 
+David Mertens C<< <dcmertens.perl@gmail.com> >> created L<Alien::FFCall> and
+updated this module to use it.
+
 =head1 SEE ALSO
 
 L<http://directory.fsf.org/ffcall.html>
